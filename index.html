@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DP-700 Scenario Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">MICROSOFT FABRIC • ORIGINAL PRACTICE</p>
+        <h1>DP-700 Scenario Lab</h1>
+        <p class="intro">Practice data-engineering decisions, get immediate feedback, and follow each explanation back to Microsoft Learn.</p>
+      </header>
+
+      <section class="notice" aria-label="Practice set note">
+        <strong>Built for learning, not dumps.</strong> These are original, documentation-aligned scenarios—not recalled or leaked certification questions. Start with 10 questions, or work through the complete 120-question bank.
+      </section>
+
+      <section class="setup card" aria-label="Quiz setup">
+        <div>
+          <label for="length">Questions in this session</label>
+          <select id="length"><option value="10">10-question sprint</option><option value="25">25-question practice</option><option value="50">50-question review</option><option value="120">Full 120-question bank</option></select>
+        </div>
+        <button id="start" class="primary">Start a new session</button>
+      </section>
+
+      <section id="empty" class="empty card">
+        <h2>How it works</h2>
+        <ol><li>Choose an answer.</li><li>See whether it is correct immediately.</li><li>Read the note and open the relevant Microsoft Learn article.</li><li>Use <em>Next question</em> to continue; your score stays visible.</li></ol>
+      </section>
+
+      <section id="quiz" class="quiz hidden" aria-live="polite">
+        <div class="progress-row"><span id="progress"></span><span id="score">Score: 0 / 0</span></div>
+        <div class="meter"><div id="meter-fill"></div></div>
+        <article class="question card">
+          <p id="domain" class="domain"></p>
+          <h2 id="question-text"></h2>
+          <div id="choices" class="choices"></div>
+          <div id="feedback" class="feedback hidden"></div>
+          <div class="actions"><button id="next" class="primary hidden">Next question</button><button id="restart" class="secondary">Restart</button></div>
+        </article>
+      </section>
+      <section id="complete" class="complete card hidden" aria-live="polite"></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
